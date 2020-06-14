@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Intro Smoke Runner" parallel="tests" thread-count="3">
+
+    <test name="TestNG Runner1">
+        <parameter name="username" value="EM01"></parameter>
+        <parameter name="password" value="sentrifugo"></parameter>
+        <parameter name="driverName" value="chrome"></parameter>
+        <classes >
+            <class name="Tests.com.Sentrifugo.LoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="TestNG Runner2">
+        <parameter name="username" value="EM01"></parameter>
+        <parameter name="password" value="sentrifugo"></parameter>
+        <parameter name="driverName" value="firefox"></parameter>
+        <classes >
+            <class name="Tests.com.Sentrifugo.LoginTest"></class>
+        </classes>
+    </test>
+
+</suite>
+
+<!-- CREATE NEW REGRESSIONRUNNER XML FILE AND RUN YOUR WINDOWINTRO CLASS
+ UNDER WINDOWPRACTICE AND RUN IFRAMEINTRO UNDER IFRAMEPRACTICE PACKAGE-->
+

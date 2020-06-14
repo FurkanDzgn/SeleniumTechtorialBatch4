@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Practice">
+
+    <test name="Parameter Annotation">
+        <parameter name="fname" value="Techtorial"></parameter>
+        <parameter name="lname" value="Academy"></parameter>
+        <parameter name="driverName" value="chrome"></parameter>
+        <classes>
+            <!--  <class name="testNgPractice.ParameterPractice"></class> -->
+            <!--   <class name="FileUpload.FileUploadTest"></class> -->
+            <class name="JSExecuter.JSIntro"></class>
+          </classes>
+      </test>
+
+  </suite>

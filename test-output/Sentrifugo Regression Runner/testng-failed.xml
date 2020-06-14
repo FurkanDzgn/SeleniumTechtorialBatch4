@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sentrifugo Regression Runner]">
+  <test thread-count="5" name="MaritalStatus Test(failed)">
+    <parameter name="password" value="sentrifugo"/>
+    <parameter name="driverName" value="chrome"/>
+    <parameter name="username" value="EM01"/>
+    <classes>
+      <class name="Tests.com.Sentrifugo.MaritalStatusTest">
+        <methods>
+          <include name="validationMaritalStatusCreation" invocation-numbers="0 1 2 3 4"/>
+          <include name="setUpPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.com.Sentrifugo.MaritalStatusTest -->
+    </classes>
+  </test> <!-- MaritalStatus Test(failed) -->
+</suite> <!-- Failed suite [Sentrifugo Regression Runner] -->

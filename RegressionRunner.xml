@@ -1,0 +1,14 @@
+<suite name="Selenium Window Smoke Runner">
+    <test name="TestNG Runner">
+        <classes>
+            <class name="WindowPractice.WindowsIntro"></class>
+            <class name="IFramePractice.IFrameIntro">
+                <methods>
+                    <include name="test2"></include>
+                   <!-- <include name="test3"></include> -->
+                    <exclude name="test4"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

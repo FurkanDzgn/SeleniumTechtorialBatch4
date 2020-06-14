@@ -1,0 +1,15 @@
+<suite name="Sentrifugo Regression Runner">
+    <test name="MaritalStatus Test">
+        <parameter name="driverName" value="chrome"></parameter>
+        <parameter name="username" value="EM01"></parameter>
+        <parameter name="password" value="sentrifugo"></parameter>
+        <classes>
+            <class name="Tests.com.Sentrifugo.MaritalStatusTest"></class>
+                <methods>
+                    <include name="validationErrorMessage"></include>
+                    <include name="validationMaritalStatusCreation"></include>
+                </methods>
+
+        </classes>
+    </test>
+</suite>
