@@ -15,7 +15,6 @@ public class JavaScriptAlert {
 
     WebDriver driver;
 
-
     @BeforeClass
     public void setUp(){
         // getDriver method returns WebDriver

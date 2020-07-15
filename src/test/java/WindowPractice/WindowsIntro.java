@@ -37,9 +37,9 @@ public class WindowsIntro {
         clickHereButton.click(); // this button will open new window
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
+
         String parentPageId=driver.getWindowHandle(); // This method will return String for page id
         System.out.println(parentPageId);
-
 
         // getWindowHandles --> Set<String>
         Set<String> pageIds=driver.getWindowHandles();
@@ -57,7 +57,6 @@ public class WindowsIntro {
             driver.switchTo().window(parentPageId);
             clickHereButton.click();
         }
-
     }
 
     @Test

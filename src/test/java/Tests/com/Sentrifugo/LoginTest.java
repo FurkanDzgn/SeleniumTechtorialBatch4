@@ -2,6 +2,7 @@ package Tests.com.Sentrifugo;
 
 import Pages.LoginPage;
 import Tests.TestBase;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

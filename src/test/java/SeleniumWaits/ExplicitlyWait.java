@@ -31,6 +31,7 @@ public class ExplicitlyWait {
         // explicitly wait will wait for specific element and provided condition
         WebDriverWait wait=new WebDriverWait(driver,10);
         WebElement idMessage=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
+
  //       WebElement idMessage=wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("message"))));
         String actualText=idMessage.getText();
         String expectedText="It's gone!";
@@ -41,6 +42,7 @@ public class ExplicitlyWait {
         addButton.click();
         // explicitlywait for loading
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.id("loading"))));
+        
 
         String actualText1=driver.findElement(By.id("message")).getText();
         String expectedText1="It's back!";

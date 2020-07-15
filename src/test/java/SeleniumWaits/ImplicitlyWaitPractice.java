@@ -32,7 +32,7 @@ public class ImplicitlyWaitPractice {
 
     }
 
-    @Test
+    @Test(enabled = true)
     public void test2(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();

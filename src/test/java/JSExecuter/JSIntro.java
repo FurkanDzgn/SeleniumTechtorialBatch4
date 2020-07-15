@@ -4,6 +4,8 @@ import Tests.TestBase;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 
+import javax.swing.plaf.TableHeaderUI;
+
 public class JSIntro extends TestBase {
 
     @Test(enabled = false)
@@ -11,11 +13,14 @@ public class JSIntro extends TestBase {
         driver.get("https://www.techtorialacademy.com/");
         // first we need to cast our driver to JSexecuter
         JavascriptExecutor jsExecuter=(JavascriptExecutor) driver;
+
+
         String title=jsExecuter.executeScript("return document.title").toString();
         System.out.println(title);
         WebElement browseCourse=driver.findElement(By.xpath("//a[.='Browse Course']"));
 
         jsExecuter.executeScript("arguments[0].click()",browseCourse);
+
 
         title=jsExecuter.executeScript("return document.title").toString();
         System.out.println(title);
