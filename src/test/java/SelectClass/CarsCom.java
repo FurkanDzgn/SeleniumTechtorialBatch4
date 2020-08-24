@@ -24,6 +24,7 @@ public class CarsCom {
         WebElement newUSedCars=driver.findElement(By.xpath("//select[@aria-label='Select a stock type']"));
         Select select=new Select(newUSedCars);
         select.selectByVisibleText("Certified Cars");
+
         Thread.sleep(2000);
         select.selectByIndex(2);
         Thread.sleep(2000);

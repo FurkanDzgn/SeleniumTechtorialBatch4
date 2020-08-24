@@ -26,7 +26,7 @@ public class DragAndDropPractice {
         // fullscreen for mac
         // maximize for windows
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//button[@class='optanon-allow-all accept-cookies-button']")).click();
+        driver.findElement(By.xpath("//button[contains(@id,'onetrust-a')]")).click();
    //     driver.findElement(By.className("optanon-allow-all accept-cookies-button")).submit();
         Actions actions=new Actions(driver);
 

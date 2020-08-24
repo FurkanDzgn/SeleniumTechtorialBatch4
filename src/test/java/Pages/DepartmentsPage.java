@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class DepartmentsPage {
 
     public DepartmentsPage(WebDriver driver){
+
         PageFactory.initElements(driver,this);
     }
 

@@ -17,7 +17,9 @@ public class MultipleSelect {
         driver.get("https://mdbootstrap.com/docs/jquery/forms/multiselect/");
 
         WebElement dropDown=driver.findElement(By.xpath("//select[@class='custom-select browser-default']"));
+
         Select select=new Select(dropDown);
+
         select.selectByValue("3");
         Thread.sleep(1000);
         select.selectByIndex(1);

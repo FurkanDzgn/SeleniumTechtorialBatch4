@@ -70,8 +70,7 @@ public class MaritalStatusTest extends TestBase {
 
     }
 
-    //,enabled = false
-    @Test(priority = 2, dataProvider = "maritalTest", dataProviderClass = MaritalStatusData.class)
+    @Test(priority = 2,enabled = true, dataProvider = "maritalTest", dataProviderClass = MaritalStatusData.class)
     public void validationMaritalStatusCreation(String code,String status,String description) throws InterruptedException {
 //        driver.get("http://demo.sentrifugo.com/index.php/");
 //        // this will login the page

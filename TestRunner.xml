@@ -1,0 +1,7 @@
+<suite name ="Alert Runner">
+    <test name = "Runner">
+        <classes>
+            <class name = "AlertPractice.JavaScriptAlert"></class>
+        </classes>
+    </test>
+</suite>

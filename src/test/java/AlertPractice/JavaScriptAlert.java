@@ -22,7 +22,7 @@ public class JavaScriptAlert {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test(enabled = true)
     public void sweetAlertTest() throws InterruptedException {
         driver.get("https://sweetalert.js.org/");
 
@@ -35,7 +35,7 @@ public class JavaScriptAlert {
         driver.findElement(By.xpath("//button[contains(.,'OK')]")).click(); //button[.='OK']
     }
 
-    @Test
+    @Test(enabled = true)
     public void javascriptAlertTest1() throws InterruptedException {
         driver.navigate().to("https://sweetalert.js.org/");
         driver.findElement(By.xpath("//button[contains(@onclick,'alert')]")).click();
@@ -46,13 +46,14 @@ public class JavaScriptAlert {
         // We have 4 method in Alert class to handle the js alerts.
         // 1- accept 2- dismiss-Cancel 3- sendKey 4- getText
         String actualJSMessage=alert.getText(); // will return text of alert
+
         String expectedJSMessage="Oops, something went wrong!";
         Assert.assertEquals(actualJSMessage,expectedJSMessage);
         alert.accept(); // it will click OK button in JS alert
 
     }
 
-    @Test
+    @Test(enabled = true)
     public void jsSendKeyTest() {
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         WebElement jsButton=driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
@@ -73,7 +74,7 @@ public class JavaScriptAlert {
 
 
     }
-    @Test
+    @Test(enabled = false)
     public void Test4(){
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         driver.findElement(By.xpath("//button[@onclick='jsPrompt()']")).click();
@@ -98,7 +99,7 @@ public class JavaScriptAlert {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(enabled = false)
     public void test2(){
         driver.navigate().to("https://the-internet.herokuapp.com/upload");
 

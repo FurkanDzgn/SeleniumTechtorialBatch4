@@ -32,6 +32,7 @@ public class ExplicitlyWait {
         WebDriverWait wait=new WebDriverWait(driver,10);
         WebElement idMessage=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("message")));
 
+
  //       WebElement idMessage=wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("message"))));
         String actualText=idMessage.getText();
         String expectedText="It's gone!";

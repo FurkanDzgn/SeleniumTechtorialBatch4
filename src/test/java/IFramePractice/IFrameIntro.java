@@ -27,7 +27,8 @@ public class IFrameIntro {
     @Test
     public void test1(){
         driver.get("https://the-internet.herokuapp.com/iframe");
-        driver.switchTo().frame(0);
+
+        driver.switchTo().frame("mce_0_ifr");
 
         WebElement textBox=driver.findElement(By.id("tinymce"));
         System.out.println(textBox.getText());

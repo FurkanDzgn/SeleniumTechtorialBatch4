@@ -26,7 +26,7 @@ public class DepartmentTest extends TestBase {
         loginPage.login("EM01","sentrifugo");
 
         // click the departments button
-          departmentsPage.departmentButton.click();
+        departmentsPage.departmentButton.click();
         departmentsPage.addButton.click();
         // click the add button
  //       departmentsPage.addButton.click();

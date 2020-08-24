@@ -15,6 +15,7 @@ public class CheckBoxPractice {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         // navigate to amazon.com searching phone
+        driver.manage().window().maximize();
         driver.get("https://www.amazon.com/");
         // send the key for search box
         WebElement searchBox=driver.findElement(By.id("twotabsearchtextbox"));

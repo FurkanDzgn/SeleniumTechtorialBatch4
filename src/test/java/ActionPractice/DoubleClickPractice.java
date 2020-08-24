@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import javax.swing.*;
 import java.util.List;
 
 public class DoubleClickPractice {
@@ -18,6 +19,7 @@ public class DoubleClickPractice {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.primefaces.org/showcase/ui/misc/effect.xhtml");
+        driver.manage().window().maximize();
 
         // 12 webelement
         List<WebElement> catalog=driver.findElements(By.xpath("//div[contains(text(),'click')]"));
@@ -26,6 +28,7 @@ public class DoubleClickPractice {
         for(WebElement element:catalog){
 
             switch (element.getText()){
+
                 case "click":
                     // single click is coming from the webelement
                     element.click();

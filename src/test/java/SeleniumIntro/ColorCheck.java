@@ -15,6 +15,7 @@ public class ColorCheck {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("http://automationpractice.com/index.php?id_product=4&controller=product");
+        driver.manage().window().maximize();
 
         WebElement pink=driver.findElement(By.id("color_24"));
 
