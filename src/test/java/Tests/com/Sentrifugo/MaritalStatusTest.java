@@ -10,12 +10,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 
 import java.sql.SQLOutput;
 import java.util.concurrent.TimeUnit;
 
-public class MaritalStatusTest extends TestBase {
+public class MaritalStatusTest extends TestBase{
 
     MaritalStatusPage page;
     LoginPage loginPage;

@@ -8,7 +8,7 @@ import javax.swing.plaf.TableHeaderUI;
 
 public class JSIntro extends TestBase {
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void test1() throws InterruptedException {
         driver.get("https://www.techtorialacademy.com/");
         // first we need to cast our driver to JSexecuter
@@ -37,7 +37,7 @@ public class JSIntro extends TestBase {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void test2() throws InterruptedException {
 
         //I want to refresh my page

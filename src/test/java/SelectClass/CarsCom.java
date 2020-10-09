@@ -17,6 +17,7 @@ public class CarsCom {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.cars.com/");
+        driver.manage().window().maximize();
         // for drop down box create object from Select class
         // it will take one parameter as element
         // tag of the element must be select for Select class
@@ -24,6 +25,7 @@ public class CarsCom {
         WebElement newUSedCars=driver.findElement(By.xpath("//select[@aria-label='Select a stock type']"));
         Select select=new Select(newUSedCars);
         select.selectByVisibleText("Certified Cars");
+
 
         Thread.sleep(2000);
         select.selectByIndex(2);

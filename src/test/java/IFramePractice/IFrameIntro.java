@@ -37,6 +37,7 @@ public class IFrameIntro {
         driver.switchTo().defaultContent();
         // it will switch the driver from iframe to default html
         WebElement header=driver.findElement(By.xpath("//h3"));
+
         System.out.println(header.getText());
 
     }

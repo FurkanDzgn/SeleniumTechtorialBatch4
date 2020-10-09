@@ -33,6 +33,7 @@ public class JavaScriptAlert {
         String expectedMessage="Something went wrong!";
         Assert.assertEquals(actualMessage,expectedMessage,"Message is validated!");
         driver.findElement(By.xpath("//button[contains(.,'OK')]")).click(); //button[.='OK']
+
     }
 
     @Test(enabled = true)
